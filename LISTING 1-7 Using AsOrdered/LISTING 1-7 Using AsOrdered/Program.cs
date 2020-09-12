@@ -36,5 +36,6 @@ namespace LISTING_1_7_Using_AsOrdered
             Console.WriteLine("Finished processing. Press a key to end.");
             Console.ReadKey();
         }
+        //基本並び順は同じ
     }
 }

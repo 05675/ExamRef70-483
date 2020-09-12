@@ -40,5 +40,6 @@ namespace LISTING_1_8_Sequential_elements
             Console.WriteLine("Finished processing. Press a key to end.");
             Console.ReadKey();
         }
+        //並列クエリの要素を順番に追って識別します。
     }
 }

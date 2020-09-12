@@ -26,4 +26,5 @@ namespace LISTING_1_13_Task_returning_a_value
             Console.ReadKey();
         }
     }
+    //2020/09/12 21:22ここまで
 }
