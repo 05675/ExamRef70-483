@@ -7,6 +7,7 @@ namespace LISTING_1_20_Threads_and_lambda_expressions
     {
         static void Main(string[] args)
         {
+            //ラムダ式を使ってスレッドの動作を指定してスレッドを開始することができます。
             Thread thread = new Thread(() =>
             {
                 Console.WriteLine("Hello from the thread");

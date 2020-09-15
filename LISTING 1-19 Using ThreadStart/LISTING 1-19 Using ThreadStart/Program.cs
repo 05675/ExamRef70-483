@@ -14,6 +14,8 @@ namespace LISTING_1_19_Using_ThreadStart
         static void Main(string[] args)
         {
             ThreadStart ts = new ThreadStart(ThreadHello);
+
+            //スレッド優先度を決める事ができる
             Thread thread = new Thread(ts);
             thread.Start();
         }

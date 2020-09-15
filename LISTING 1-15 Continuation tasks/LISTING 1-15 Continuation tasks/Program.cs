@@ -23,6 +23,7 @@ namespace LISTING_1_15_Continuation_tasks
             Task task = Task.Run(() => HelloTask());
             task.ContinueWith( (prevTask) => WorldTask());
 
+            //上記のTaskより、以下の処理が先に行われる
             Console.WriteLine("Finished processing. Press a key to end.");
             Console.ReadKey();
         }

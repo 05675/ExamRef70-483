@@ -24,6 +24,8 @@ namespace LISTING_1_14_Task_waitall
                 Tasks[i] = Task.Run(() => DoWork(taskNum));
             }
 
+            //Task完了を待つ
+
             Task.WaitAll(Tasks);
  
             Console.WriteLine("Finished processing. Press a key to end.");

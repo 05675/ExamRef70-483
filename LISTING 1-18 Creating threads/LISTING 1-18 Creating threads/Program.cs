@@ -8,13 +8,15 @@ namespace LISTING_1_18_Creating_threads
         static void ThreadHello()
         {
             Console.WriteLine("Hello from the thread");
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
         }
 
         static void Main(string[] args)
         {
             Thread thread = new Thread(ThreadHello);
-            thread.Start();
+
+            //ここを通過したら実行される。スレッドは、糸のように一筋の流れ
+          　thread.Start();
         }
     }
 }

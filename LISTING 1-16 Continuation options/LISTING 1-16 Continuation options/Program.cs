@@ -9,6 +9,8 @@ namespace LISTING_1_16_Continuation_options
         public static void HelloTask()
         {
             Thread.Sleep(1000);
+
+            //意図的に例外を投げる
             throw new Exception("Fail");
             Console.WriteLine("Hello");
         }
@@ -28,6 +30,7 @@ namespace LISTING_1_16_Continuation_options
         {
             Task task = Task.Run(() => HelloTask());
 
+            //HelloTaskが成功した時に以下は動作する
             task.ContinueWith((prevTask) => WorldTask(), TaskContinuationOptions.OnlyOnRanToCompletion);
             task.ContinueWith((prevTask) => ExceptionTask(), TaskContinuationOptions.OnlyOnFaulted);
 

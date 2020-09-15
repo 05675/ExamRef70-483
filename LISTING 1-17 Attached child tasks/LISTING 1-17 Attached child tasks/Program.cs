@@ -27,7 +27,7 @@ namespace LISTING_1_17_Attached_child_tasks
                 }
             });
 
-            parent.Wait(); // will wait for all the attached children to complete
+            parent.Wait(); // 添付されているすべての子が完了するのを待ちます。
 
             Console.WriteLine("Parent finished. Press a key to end.");
             Console.ReadKey();
