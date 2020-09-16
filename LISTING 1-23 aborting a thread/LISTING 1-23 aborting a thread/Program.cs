@@ -20,6 +20,8 @@ namespace LISTING_1_23_aborting_a_thread
 
             Console.WriteLine("Press a key to stop the clock");
             Console.ReadKey();
+
+            //abortを呼び出せば、即座に処理は終了される
             tickThread.Abort();
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();

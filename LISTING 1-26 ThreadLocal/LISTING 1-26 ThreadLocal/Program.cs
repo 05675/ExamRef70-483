@@ -36,5 +36,6 @@ namespace LISTING_1_27_ThreadLocal
 
             Console.ReadKey();
         }
+        //よく分からない。
     }
 }

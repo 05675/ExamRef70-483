@@ -16,6 +16,7 @@ namespace LISTING_1_21_ParameterizedThreadStart
 
             Thread thread = new Thread(ps);
 
+            //スレッドにデータ(99)を渡す
             thread.Start(99);
         }
     }

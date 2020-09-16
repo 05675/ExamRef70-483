@@ -24,6 +24,9 @@ namespace LISTING_1_25_Using_join
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
         }
+        //joinを使用したスレッド同期化。
+        //あるスレッドが他のスレッドでjoinメソッドを呼び出すと、
+        //他のスレッドが完了するまでjoinメソッドの呼び出し元が保持されます。
     }
 }
 

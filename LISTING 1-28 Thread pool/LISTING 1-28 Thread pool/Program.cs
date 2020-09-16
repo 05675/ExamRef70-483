@@ -27,5 +27,6 @@ namespace LISTING_1_28_Thread_pool
             }
             Console.ReadKey();
         }
+        //スレッドプールを行う
     }
 }
