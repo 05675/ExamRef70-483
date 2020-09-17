@@ -8,18 +8,18 @@ namespace LISTING_1_35_Using_BlockingCollection
     {
         static void Main(string[] args)
         {
-            // Blocking collection that can hold 5 items
-            BlockingCollection<int> data = new BlockingCollection<int>(5);
+            // 5つのアイテムを収納できるブロック(区画)を収集(コレクション)
+            BlockingCollection<int> data = new BlockingCollection<int>(10);
 
             Task.Run(() =>
             {
-                // attempt to add 10 items to the collection - blocks after 5th
-                for(int i=0;i<10;i++)
+                // コレクションに10個のアイテムを追加しようとする - 5番目以降のブロック
+                for (int i = 0; i < 10; i++)
                 {
                     data.Add(i);
                     Console.WriteLine("Data {0} added successfully.", i);
                 }
-                // indicate we have no more to add
+                // これ以上追加するものがないことを示しています
                 data.CompleteAdding();
             });
 
